@@ -5,10 +5,10 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { authformSchema } from "@/lib/utils";
+import { authFormSchema } from "@/lib/utils";
 import { Control, FieldPath } from "react-hook-form";
 import { z } from "zod";
-const formSchema = authformSchema("sign-up");
+const formSchema = authFormSchema("sign-up");
 interface CustomInputProps {
   
   control: Control<z.infer<typeof formSchema>>;
